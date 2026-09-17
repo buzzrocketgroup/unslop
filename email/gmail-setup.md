@@ -19,7 +19,7 @@ You send from your normal Gmail. The message is styled as a marketing email. Tha
 
 Use it with: Compose or Reply → three dots → **Templates → UNSLOP**.
 
-Reply, do not compose a new thread, unless you want a fresh conversation. Replying keeps their original slop underneath, which is part of the joke.
+A Reply will not change Gmail’s subject line. The body now opens with **Subject: Your LinkedIn scrape is showing** so the line still lands. If you already saved an older template, overwrite it: insert the new copy, then three dots → **Templates → Save draft as template → Save over existing template → UNSLOP**.
 
 ## 3. Optional auto-reply filter
 
