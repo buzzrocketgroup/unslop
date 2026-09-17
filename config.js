@@ -8,5 +8,5 @@ window.UNSLOP = {
   price: "4.99",
   compareAt: "47",
   siteUrl: "https://unstruct.com/",
-  gumroadUrl: ""
+  gumroadUrl: "https://buzzrocket.gumroad.com/l/cebag"
 };
