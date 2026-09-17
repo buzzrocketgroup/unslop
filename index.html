@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UNSLOP — The Anti-Slop Email Manual</title>
+  <meta name="description" content="A short, brutal manual for people who automate email and still want to sound like a person. $4.99.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">A public service for people who scrape LinkedIn and then write like a toaster</div>
+
+  <header class="wrap nav">
+    <a class="logo" href="./">UNSLOP</a>
+    <nav class="nav-links">
+      <a href="#tells">The tells</a>
+      <a href="#inside">What's inside</a>
+      <a href="#rewrite">Before / after</a>
+      <a href="#buy">Buy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <p class="kicker">Email marketing for people with a pulse</p>
+        <h1>Your AI email is why nobody writes back.</h1>
+        <p class="lede">If the first line was “I came across your profile,” they already know you came across a CSV. This is the $4.99 intervention.</p>
+        <div class="hero-actions">
+          <a class="btn js-buy" href="#buy">Get the manual — $<span class="js-price">4.99</span></a>
+          <a class="btn btn-ghost" href="#tells">See if you did the crime</a>
+        </div>
+        <p class="fine">Instant PDF. 6 pages. No webinar. No “community.” No 47-part funnel.</p>
+        <div class="setup-banner">Checkout is not connected yet. Open <code>config.js</code> and paste your Gumroad product URL. See <code>SETUP.md</code>.</div>
+      </div>
+
+      <aside class="product-card">
+        <div class="badge">Digital download</div>
+        <p class="kicker" style="color:#e8ff3d;">The Anti-Slop Email Manual</p>
+        <h2>Stop sounding like a prompt with a LinkedIn plugin.</h2>
+        <div class="price-row">
+          <div class="price">$<span class="js-price">4.99</span></div>
+          <div class="compare">$<span class="js-compare">47</span></div>
+        </div>
+        <ul>
+          <li>The 12 tells that scream “harvested + generated”</li>
+          <li>Rules for automated email that can survive a human</li>
+          <li>Before / after rewrites you can steal</li>
+          <li>A send checklist that takes 20 seconds</li>
+        </ul>
+        <a class="btn btn-hot js-buy" href="#buy">Download it before your next sequence</a>
+      </aside>
+    </section>
+
+    <section id="tells" class="section section-alt">
+      <div class="wrap">
+        <h2>If two of these are in the email, they already muted you.</h2>
+        <p>These are not “best practices.” These are the fingerprints of a model chewing on a scraped profile.</p>
+        <div class="tells">
+          <div class="tell"><strong>I came across your profile</strong><span>No you didn’t. Instantly did.</span></div>
+          <div class="tell"><strong>Impressed by your journey</strong><span>You have never witnessed this journey.</span></div>
+          <div class="tell"><strong>Fellow [industry noun]</strong><span>This is not rapport. This is a mail-merge token.</span></div>
+          <div class="tell"><strong>I’d love to pick your brain</strong><span>Say you want a meeting. Do not ask to harvest a second organ.</span></div>
+          <div class="tell"><strong>Quick question / circling back</strong><span>It was not quick. You are not circling. You are nagging.</span></div>
+          <div class="tell"><strong>Leverage, unlock, elevate</strong><span>If a word could be in a Series B deck, delete it.</span></div>
+          <div class="tell"><strong>First name + company + nothing else</strong><span>That is not personalization. That is a SELECT statement.</span></div>
+          <div class="tell"><strong>15 minutes on your calendar</strong><span>You are a stranger. That is not a reasonable ask.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="inside" class="section">
+      <div class="wrap contents">
+        <h2>Six pages. Then go rewrite the sequence.</h2>
+        <p>This is not a thought-leadership PDF. It is a field manual. Read it once. Keep the checklist.</p>
+        <ol>
+          <li><strong>Why your “personalization” is a tell.</strong> What harvested LinkedIn copy looks like from the other side of the inbox.</li>
+          <li><strong>The 12 slop tells.</strong> Phrases, rhythms, and fake intimacy that announce a language model.</li>
+          <li><strong>Write like a person who is busy.</strong> One context line that could only be them. One ask that can be answered in a reply.</li>
+          <li><strong>Automate without humiliation.</strong> What you may mail-merge. What you may not invent.</li>
+          <li><strong>Before / after.</strong> The same outreach, with the cosplay removed.</li>
+          <li><strong>The 20-second send checklist.</strong> If you fail two items, do not press send.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="rewrite" class="section section-alt">
+      <div class="wrap">
+        <h2>Same person. Same goal. One of these is unreadable.</h2>
+        <div class="split">
+          <article class="mail bad">
+            <div class="label">What you sent</div>
+            <p>Hi {{FirstName}},</p>
+            <p>I came across your profile and was really impressed by your work in the industry. As a fellow innovator, I’d love to explore how we can leverage synergies and unlock growth together.</p>
+            <p>Would you be open to a quick 15-minute chat next week?</p>
+            <p>Best,<br>A prompt</p>
+          </article>
+          <article class="mail good">
+            <div class="label">What a person would send</div>
+            <p>Hi Maya,</p>
+            <p>You wrote last month that pallet labels were eating an hour a day in the warehouse. We built a print flow that cut that to a scan.</p>
+            <p>If that’s still a mess, I can send a 90-second clip. No call required.</p>
+            <p>Tom<br>Unslop, if you need a villain</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Social proof from people who got tired of being the joke.</h2>
+        <div class="quotes">
+          <figure class="quote">
+            <p>“I used to write ‘I hope this email finds you well.’ I now hope nothing, and my replies went up.”</p>
+            <cite>Former SDR, now an adult</cite>
+          </figure>
+          <figure class="quote">
+            <p>“My open rate dropped after I stopped emailing 8,000 strangers. That is called shame, and it is useful.”</p>
+            <cite>Someone who uninstalled Apollo</cite>
+          </figure>
+          <figure class="quote">
+            <p>“I paid five dollars to be told I sounded like a blender. Accurate. Refund not requested.”</p>
+            <cite>A LinkedIn power user, recovering</cite>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="buy" class="section">
+      <div class="wrap">
+        <div class="buy-block">
+          <p class="kicker" style="color:#e8ff3d;">Limited by taste, not inventory</p>
+          <h2>Pay $4.99. Sound less like a product demo of yourself.</h2>
+          <p>Usually we would put a fake countdown timer here. Instead: the price is five dollars until this stops being funny.</p>
+          <p><a class="btn btn-hot js-buy" href="#buy">Get the PDF — $<span class="js-price">4.99</span></a></p>
+          <p class="guarantee">30-day “I still sound like a bot” guarantee. If you read it, apply it, and still open with a scraped compliment, Gumroad will refund you. We will also judge you a little.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt faq">
+      <div class="wrap">
+        <h2>Objections, handled like a landing page.</h2>
+        <details>
+          <summary>Is this just a joke?</summary>
+          <p>The tone is a joke. The advice is not. If you are paying tools to send slop, five dollars to stop is the cheapest line item in the stack.</p>
+        </details>
+        <details>
+          <summary>Why $4.99 and not free?</summary>
+          <p>Free PDFs get collected and ignored. Five dollars is a filter. Also, you invoiced a stranger’s attention. This is a taste of the other direction.</p>
+        </details>
+        <details>
+          <summary>Do I get it immediately?</summary>
+          <p>Yes. Gumroad emails the PDF after payment. Check spam if your life is consistent.</p>
+        </details>
+        <details>
+          <summary>Can I expense this?</summary>
+          <p>Yes. Category: “continuing education” or “consequences.”</p>
+        </details>
+        <details>
+          <summary>Will this teach me to write better AI prompts?</summary>
+          <p>No. It will teach you when not to use one. That is the product.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot-grid">
+      <div>
+        <div class="logo">UNSLOP</div>
+        <p>A tiny press for people who still read their own drafts.</p>
+      </div>
+      <p>You’re looking at this page because an email asked you to. There is no list. Do not subscribe. We would not have you.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-buy">
+    <strong>The Anti-Slop Email Manual</strong>
+    <a class="btn js-buy" href="#buy">$<span class="js-price">4.99</span> — get the PDF</a>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

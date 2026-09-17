@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Anti-Slop Email Manual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @page { size: letter; margin: 0.7in; }
+    :root {
+      --ink: #141410;
+      --muted: #555248;
+      --line: #cfc8b4;
+      --acid: #d6ee2a;
+      --hot: #c42712;
+      --ok: #14532d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+      font-size: 11.5pt;
+      line-height: 1.45;
+    }
+    h1, h2, h3 { font-family: Fraunces, Georgia, serif; line-height: 1.1; }
+    h1 { font-size: 34pt; letter-spacing: -0.03em; margin: 0 0 10px; }
+    h2 { font-size: 18pt; margin: 0 0 10px; }
+    h3 { font-size: 13pt; margin: 16px 0 6px; }
+    p { margin: 0 0 9px; }
+    .muted { color: var(--muted); }
+    .kicker {
+      font-size: 9pt;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+    .page { page-break-after: always; }
+    .page:last-child { page-break-after: auto; }
+    .cover {
+      min-height: 9.5in;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #11110f;
+      color: #f3efe4;
+      padding: 42px 40px;
+    }
+    .cover h1 { color: #e8ff3d; font-size: 42pt; }
+    .rule { border-top: 1px solid var(--line); margin: 14px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 10.5pt; }
+    th, td { border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; padding: 7px 8px 7px 0; }
+    th { font-size: 9pt; letter-spacing: 0.08em; text-transform: uppercase; }
+    .bad { color: var(--hot); font-weight: 700; }
+    .good { color: var(--ok); font-weight: 700; }
+    .box {
+      border: 1px solid var(--ink);
+      padding: 12px 14px;
+      margin: 12px 0;
+    }
+    .mail {
+      font-family: "IBM Plex Mono", Consolas, monospace;
+      font-size: 9.5pt;
+      background: #f6f2e7;
+      border: 1px solid var(--line);
+      padding: 12px 14px;
+      white-space: pre-wrap;
+      margin: 8px 0 14px;
+    }
+    ol, ul { margin: 6px 0 12px; padding-left: 20px; }
+    li { margin: 4px 0; }
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    footer.tiny { margin-top: 18px; font-size: 9pt; color: var(--muted); }
+    @media screen {
+      body { background: #cfc8b4; }
+      .page, .cover {
+        width: 8.5in;
+        min-height: 11in;
+        margin: 24px auto;
+        background: #f3efe4;
+        box-shadow: 0 8px 30px rgba(0,0,0,.18);
+      }
+      .cover { background: #11110f; }
+    }
+  </style>
+</head>
+<body>
+  <section class="cover page">
+    <div>
+      <p class="kicker" style="color:#e8ff3d;">UNSLOP · $4.99 · A short manual</p>
+      <h1>The Anti-Slop Email Manual</h1>
+      <p style="font-size:16pt; max-width: 22ch;">How to automate outreach without sounding like a LinkedIn-scraping language model.</p>
+    </div>
+    <div>
+      <p>Read this once. Keep the last page. If two checklist items fail, do not press send.</p>
+      <p class="muted">This is not a prompt pack. If you came here for better AI copy, you are the problem the rest of us can see.</p>
+    </div>
+  </section>
+
+  <section class="page">
+    <p class="kicker">01 · Why this exists</p>
+    <h2>Your personalization is a tell.</h2>
+    <p>Most “AI email” is not writing. It is a merge field wearing a compliment. The recipient already knows the pattern: you exported a title, a company, and a first name from LinkedIn, poured it into a model, and asked the model to sound warm.</p>
+    <p>Warmth from a stranger who has never met you is not warmth. It is a costume. People who get a lot of inbound can clock the costume in one sentence. They do not mark it as spam because they are polite, or busy, or the filter missed it. They delete it with their eyes.</p>
+    <div class="box">
+      <strong>The test:</strong> take out the first name, the company, and the job title. If nothing specific remains, you did not personalize. You labeled.
+    </div>
+    <h3>What harvested + generated looks like from the other side</h3>
+    <ul>
+      <li>A compliment that could apply to anyone with a pulse and a profile.</li>
+      <li>A “reason for reaching out” that is just their industry restated.</li>
+      <li>A request for 15 minutes that arrives before a reason to care.</li>
+      <li>Rhythm that is too even: three-part lists, balanced clauses, no sharp edges.</li>
+      <li>A sign-off from a first name that does not match the sending domain, or matches it too perfectly, like a brand that was born last Tuesday.</li>
+    </ul>
+    <p>If you are automating, you are allowed to be brief and commercial. You are not allowed to pretend you have a relationship. That is the whole book.</p>
+    <footer class="tiny">UNSLOP · The Anti-Slop Email Manual · Page 2</footer>
+  </section>
+
+  <section class="page">
+    <p class="kicker">02 · The tells</p>
+    <h2>Twelve ways the room knows.</h2>
+    <table>
+      <thead>
+        <tr><th>The tell</th><th>What they hear</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>I hope this email finds you well</td><td>I have nothing to say and I started anyway.</td></tr>
+        <tr><td>I came across your profile / your work</td><td>A scraper came across a selector.</td></tr>
+        <tr><td>Impressed by your journey / passion</td><td>I did not read a single specific thing you did.</td></tr>
+        <tr><td>As a fellow [generic noun]</td><td>I need a tribe so this feels less like an ad.</td></tr>
+        <tr><td>I’d love to pick your brain</td><td>I want unpaid consulting from a stranger.</td></tr>
+        <tr><td>Quick question / just circling back</td><td>I will not name the ask, then I will nag.</td></tr>
+        <tr><td>Leverage, unlock, elevate, streamline, delve</td><td>A model is doing the adjectives.</td></tr>
+        <tr><td>Rule-of-three sentences and em-dash salad</td><td>Default machine cadence. Humans interrupt themselves.</td></tr>
+        <tr><td>First name + company + title, then mush</td><td>SELECT first_name, company FROM linkedin_csv.</td></tr>
+        <tr><td>15 minutes on your calendar</td><td>You want their most expensive asset first.</td></tr>
+        <tr><td>Not sure if you saw my last note</td><td>I know you saw it. I am applying pressure.</td></tr>
+        <tr><td>Happy to hop on a call to explore synergies</td><td>I do not have a product sentence yet.</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:14px;">One of these can be an accident. Three of these is a stack. The stack is why they do not reply, even when your product is fine.</p>
+    <footer class="tiny">UNSLOP · The Anti-Slop Email Manual · Page 3</footer>
+  </section>
+
+  <section class="page">
+    <p class="kicker">03 · The rules</p>
+    <h2>Write like a person who is busy.</h2>
+    <ol>
+      <li><strong>If you did not look, do not pretend.</strong> “Saw you posted about X” is allowed only when you can quote the actual point. Otherwise skip the compliment.</li>
+      <li><strong>One line of context that could only be them.</strong> A warehouse constraint. A shipping lane. A public complaint. A job they opened. Not “your work in the space.”</li>
+      <li><strong>One ask that fits in a reply.</strong> “Want the 90-second clip?” beats “find time on my calendar.” Meetings are a second step, earned.</li>
+      <li><strong>Cut the throat-clearing.</strong> Delete the first two sentences. Start at the third. If the email still works, the first two were slop.</li>
+      <li><strong>Sound like Slack, then add one comma of politeness.</strong> If you would not say it to a peer you respect, do not put it in Times New Roman and call it enterprise.</li>
+      <li><strong>Name the company and the reason in sentence one or two.</strong> Mystery is not intrigue when you are uninvited.</li>
+      <li><strong>Subject lines should be specific and slightly boring.</strong> “Pallet labels / 1-hour waste” beats “Quick idea for {{Company}}!” Clever is how spam filters stay employed.</li>
+      <li><strong>Stop after two follow-ups</strong> unless they replied. Persistence is not a personality. It is a setting.</li>
+    </ol>
+    <div class="box">
+      <strong>Automation rule:</strong> you may merge facts you actually have. You may not invent familiarity. A true trigger (“you downloaded the rate card,” “you asked support about carton sizes”) is personalization. A generated compliment is fraud with better punctuation.
+    </div>
+    <footer class="tiny">UNSLOP · The Anti-Slop Email Manual · Page 4</footer>
+  </section>
+
+  <section class="page">
+    <p class="kicker">04 · Before / after</p>
+    <h2>Same goal. One of these can be read.</h2>
+    <p class="bad">Before — harvested, generated, and proud of it</p>
+    <div class="mail">Subject: Quick question, {{FirstName}}
+
+Hi {{FirstName}},
+
+I came across your profile and was really impressed by your work in the industry. As a fellow innovator, I’d love to explore how we can leverage synergies and unlock growth together.
+
+Would you be open to a quick 15-minute chat next week?
+
+Best,
+A prompt</div>
+    <p class="good">After — a human with a reason</p>
+    <div class="mail">Subject: Pallet labels eating an hour a day
+
+Hi Maya,
+
+You mentioned last month that bay labels were slowing the morning pick. We print from the same scan the picker already does.
+
+If that’s still a mess, I can send a 90-second clip. No call.
+
+Tom
+Unslop Press</div>
+    <h3>What changed</h3>
+    <ul>
+      <li>The subject names a problem, not a vibe.</li>
+      <li>The first line refers to a thing only she said, or a thing only her operation has.</li>
+      <li>The ask is a file, not a meeting.</li>
+      <li>No journey. No fellow. No synergies. No hope that the email finds her well. It found her. That is enough.</li>
+    </ul>
+    <p>If you cannot write the “after” without stalking them, you do not have a reason to email them. That is not a copy problem. That is a list problem.</p>
+    <footer class="tiny">UNSLOP · The Anti-Slop Email Manual · Page 5</footer>
+  </section>
+
+  <section class="page">
+    <p class="kicker">05 · The checklist</p>
+    <h2>Twenty seconds before send.</h2>
+    <p>Fail two and you are not doing email marketing. You are doing cosplay.</p>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Question</th><th>If no</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Can I point to a fact that is not their name, title, or company?</td><td>Do not invent one. Shorten the email.</td></tr>
+        <tr><td>2</td><td>Did I remove every sentence I would be embarrassed to read aloud?</td><td>Read it aloud. Delete the costume.</td></tr>
+        <tr><td>3</td><td>Is the ask answerable in one reply?</td><td>Downgrade the ask.</td></tr>
+        <tr><td>4</td><td>Would this still make sense if I hid the first name?</td><td>You labeled, you did not write.</td></tr>
+        <tr><td>5</td><td>Did I name who I am and why I am allowed to bother them?</td><td>Add it. Mystery is not a strategy.</td></tr>
+        <tr><td>6</td><td>Did I avoid hope / journey / fellow / leverage / 15 minutes?</td><td>You already know what to cut.</td></tr>
+        <tr><td>7</td><td>If this is automated, is every merged token a real fact?</td><td>Turn the “personal” line off.</td></tr>
+        <tr><td>8</td><td>Is there a real way to say no or never hear from me again?</td><td>Put one in. Adults offer exits.</td></tr>
+      </tbody>
+    </table>
+    <div class="box">
+      <strong>Last line, since you paid $4.99:</strong> volume is not a substitute for a reason. A smaller list with a true trigger will beat a LinkedIn dump and a prompt, every week, forever, including the weeks you do not want that to be true.
+    </div>
+    <p style="margin-top:20px;"><strong>UNSLOP</strong> · A tiny press for people who still read their own drafts.</p>
+    <p class="muted">If you used this to write a better bot, you missed it. Use it to send fewer, truer emails.</p>
+    <footer class="tiny">UNSLOP · The Anti-Slop Email Manual · Page 6</footer>
+  </section>
+</body>
+</html>
